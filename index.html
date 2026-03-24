@@ -17,14 +17,18 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b8a4a">
 
-  <meta property="og:title" content="Uruá Educacional">
-  <meta property="og:description" content="Educação humana, relevante e com qualidade.">
+  <meta property="og:title" content="Uruá Educacional | Educação humana, relevante e com qualidade">
+  <meta
+    property="og:description"
+    content="Educação humana, relevante e com qualidade."
+  >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://uruaeducacional.com">
   <meta property="og:image" content="https://uruaeducacional.com/images/logo-urua.jpeg">
+  <meta property="og:locale" content="pt_BR">
 
   <link rel="canonical" href="https://uruaeducacional.com">
-  <link rel="icon" href="images/logo-urua.jpeg">
+  <link rel="icon" href="images/logo-urua.jpeg" type="image/jpeg">
 
   <link
     rel="stylesheet"
@@ -36,11 +40,17 @@
 <body>
   <header class="header">
     <div class="container header-container">
-      <a href="#home" class="logo" aria-label="Ir para o início">
-        <img src="images/logo-urua.jpeg" alt="Logo Uruá Educacional">
+      <a href="#home" class="logo" aria-label="Ir para o início da Uruá Educacional">
+        <img
+          src="images/logo-urua.jpeg"
+          alt="Logo da Uruá Educacional"
+          width="520"
+          height="220"
+          decoding="async"
+        >
       </a>
 
-      <nav class="menu">
+      <nav class="menu" aria-label="Menu principal">
         <ul>
           <li><a href="#home">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -49,141 +59,184 @@
         </ul>
       </nav>
 
-      <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+      <button
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-list"
+      >
+        ☰
+      </button>
     </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="container">
-      <p class="hero-kicker">Educação com propósito</p>
-      <h1>Formação humana, relevante e conectada com o presente</h1>
-      <p class="hero-text">
-        A Uruá Educacional promove experiências de aprendizagem com acolhimento,
-        qualidade e compromisso com o desenvolvimento de pessoas, famílias e instituições.
-      </p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-kicker">Educação com propósito</p>
 
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#contato">Fale conosco</a>
-        <a class="btn btn-secondary" href="#sobre">Conheça a Uruá</a>
-      </div>
-    </div>
-  </section>
+        <h1>Formação humana, relevante e conectada com o presente</h1>
 
-  <section id="sobre" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Sobre a Uruá Educacional</h2>
-        <p>
-          Atuamos com compromisso, acolhimento e excelência, promovendo experiências
-          educacionais que valorizam o ser humano, a aprendizagem significativa
-          e a transformação social.
+        <p class="hero-text">
+          A Uruá Educacional promove experiências de aprendizagem com acolhimento,
+          qualidade e compromisso com o desenvolvimento de pessoas, famílias e instituições.
         </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="diferenciais" class="section section-alt">
-    <div class="container">
-      <div class="section-title">
-        <h2>Nossos diferenciais</h2>
-        <p>
-          Uma atuação educacional pensada para gerar impacto real, com proximidade,
-          qualidade e propósito.
-        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Fale conosco</a>
+          <a class="btn btn-secondary" href="#sobre">Conheça a Uruá</a>
+        </div>
       </div>
+    </section>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Educação com propósito</h3>
+    <section id="sobre" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-content">
+          <p class="about-kicker">Sobre a Uruá Educacional</p>
+
+          <h2>
+            Uma educação mais
+            <span>humana, relevante e transformadora</span>
+          </h2>
+
           <p>
-            Projetos e ações voltados para uma formação significativa, humana e conectada com a realidade.
+            A Uruá Educacional atua com compromisso, acolhimento e excelência,
+            promovendo experiências educacionais que valorizam o ser humano,
+            a aprendizagem significativa e a transformação social.
           </p>
-        </article>
 
-        <article class="card">
-          <h3>Atendimento próximo</h3>
           <p>
-            Valorizamos o acolhimento, a escuta e a construção de relações sólidas com alunos, famílias e parceiros.
+            Nossa proposta é construir caminhos de aprendizagem com qualidade,
+            proximidade e propósito, fortalecendo o desenvolvimento de pessoas,
+            famílias e instituições por meio de uma atuação séria e sensível.
           </p>
-        </article>
 
-        <article class="card">
-          <h3>Qualidade e relevância</h3>
-          <p>
-            Trabalhamos com seriedade e compromisso para oferecer experiências educacionais consistentes e transformadoras.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
+          <a href="#contato" class="btn btn-primary">Saiba mais</a>
+        </div>
 
-  <section id="contato" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Entre em contato</h2>
-        <p>
-          Estamos disponíveis para esclarecer dúvidas, apresentar nossa proposta e conversar com você.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:uruaeducacional@gmail.com">
-          <div class="contact-icon">
-            <i class="fa-solid fa-envelope"></i>
+        <div class="about-image-wrapper">
+          <div class="about-badge">
+            <i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>
+            <span>Educação com propósito</span>
           </div>
-          <h3>E-mail</h3>
-          <p>uruaeducacional@gmail.com</p>
-          <span>Enviar e-mail</span>
-        </a>
 
-        <a
-          class="contact-card"
-          href="https://www.google.com/maps/search/?api=1&query=R.+Des.+Motta,+3456+-+Água+Verde,+Curitiba+-+PR,+80430-232"
-          target="_blank"
-          rel="noopener noreferrer"
+          <img
+            src="images/sobre-urua.jpg"
+            alt="Ambiente representando a proposta educacional da Uruá"
+            class="about-image"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossos diferenciais</h2>
+          <p>
+            Uma atuação educacional pensada para gerar impacto real, com proximidade,
+            qualidade e propósito.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Educação com propósito</h3>
+            <p>
+              Projetos e ações voltados para uma formação significativa, humana e conectada com a realidade.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Atendimento próximo</h3>
+            <p>
+              Valorizamos o acolhimento, a escuta e a construção de relações sólidas com alunos, famílias e parceiros.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Qualidade e relevância</h3>
+            <p>
+              Trabalhamos com seriedade e compromisso para oferecer experiências educacionais consistentes e transformadoras.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Entre em contato</h2>
+          <p>
+            Estamos disponíveis para esclarecer dúvidas, apresentar nossa proposta e conversar com você.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:uruaeducacional@gmail.com" aria-label="Enviar e-mail para Uruá Educacional">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </div>
+            <h3>E-mail</h3>
+            <p>uruaeducacional@gmail.com</p>
+            <span>Enviar e-mail</span>
+          </a>
+
+          <a
+            class="contact-card"
+            href="https://www.google.com/maps/search/?api=1&query=R.+Des.+Motta,+3456+-+Água+Verde,+Curitiba+-+PR,+80430-232"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir endereço da Uruá Educacional no mapa"
+          >
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            </div>
+            <h3>Endereço</h3>
+            <p>R. Des. Motta, 3456 - Água Verde, Curitiba - PR, 80430-232</p>
+            <span>Abrir no mapa</span>
+          </a>
+
+          <a
+            class="contact-card"
+            href="https://wa.me/5541988352477"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Conversar com a Uruá Educacional no WhatsApp"
+          >
+            <div class="contact-icon">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+55 41 98835-2477</p>
+            <span>Conversar agora</span>
+          </a>
+        </div>
+
+        <form
+          id="form-contato"
+          class="contact-form"
+          action="https://formsubmit.co/uruaeducacional@gmail.com"
+          method="POST"
         >
-          <div class="contact-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <h3>Endereço</h3>
-          <p>R. Des. Motta, 3456 - Água Verde, Curitiba - PR, 80430-232</p>
-          <span>Abrir no mapa</span>
-        </a>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <input type="text" name="assunto" placeholder="Assunto">
+          <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
 
-        <a
-          class="contact-card"
-          href="https://wa.me/5541988352477"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="contact-icon">
-            <i class="fa-brands fa-whatsapp"></i>
-          </div>
-          <h3>WhatsApp</h3>
-          <p>+55 41 98835-2477</p>
-          <span>Conversar agora</span>
-        </a>
+          <input type="hidden" name="_subject" value="Novo contato pelo site Uruá Educacional">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
       </div>
-
-      <form
-        id="form-contato"
-        class="contact-form"
-        action="https://formsubmit.co/uruaeducacional@gmail.com"
-        method="POST"
-      >
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <input type="text" name="assunto" placeholder="Assunto">
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-
-        <input type="hidden" name="_subject" value="Novo contato pelo site Uruá Educacional">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <button type="submit">Enviar mensagem</button>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -196,9 +249,9 @@
     class="whatsapp-float"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Falar no WhatsApp"
+    aria-label="Falar no WhatsApp com a Uruá Educacional"
   >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
   </a>
 
   <script src="js/script.js"></script>
