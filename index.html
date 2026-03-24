@@ -3,18 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uruá Educacional</title>
-  <meta name="description" content="Uruá Educacional - Educação humana, relevante e com qualidade.">
 
+  <title>Uruá Educacional | Educação humana, relevante e com qualidade</title>
+  <meta
+    name="description"
+    content="A Uruá Educacional oferece uma proposta educacional humana, relevante e com qualidade, com atendimento próximo e compromisso com a aprendizagem."
+  >
+  <meta
+    name="keywords"
+    content="educação, instituição educacional, Uruá Educacional, Curitiba, ensino, formação, aprendizagem"
+  >
+  <meta name="author" content="Uruá Educacional">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b8a4a">
+
+  <meta property="og:title" content="Uruá Educacional">
+  <meta property="og:description" content="Educação humana, relevante e com qualidade.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uruaeducacional.com">
+  <meta property="og:image" content="https://uruaeducacional.com/images/logo-urua.jpeg">
+
+  <link rel="canonical" href="https://uruaeducacional.com">
+  <link rel="icon" href="images/logo-urua.jpeg">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <a href="#home" class="logo">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Ir para o início">
         <img src="images/logo-urua.jpeg" alt="Logo Uruá Educacional">
       </a>
 
@@ -31,37 +53,35 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="home" class="hero">
     <div class="container">
-      <h1>Bem-vindo à Uruá Educacional</h1>
-      <p>
-        Construindo a educação de forma humana, relevante e com qualidade,
-        com foco no desenvolvimento de pessoas e no fortalecimento de trajetórias educacionais.
+      <p class="hero-kicker">Educação com propósito</p>
+      <h1>Formação humana, relevante e conectada com o presente</h1>
+      <p class="hero-text">
+        A Uruá Educacional promove experiências de aprendizagem com acolhimento,
+        qualidade e compromisso com o desenvolvimento de pessoas, famílias e instituições.
       </p>
 
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contato">Fale conosco</a>
-        <a class="btn btn-secondary" href="#sobre">Saiba mais</a>
+        <a class="btn btn-secondary" href="#sobre">Conheça a Uruá</a>
       </div>
     </div>
   </section>
 
-  <!-- SOBRE -->
   <section id="sobre" class="section">
     <div class="container">
       <div class="section-title">
         <h2>Sobre a Uruá Educacional</h2>
         <p>
-          A Uruá Educacional atua com compromisso, acolhimento e excelência,
-          promovendo experiências educacionais que valorizam o ser humano,
-          a aprendizagem significativa e a transformação social.
+          Atuamos com compromisso, acolhimento e excelência, promovendo experiências
+          educacionais que valorizam o ser humano, a aprendizagem significativa
+          e a transformação social.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- DIFERENCIAIS -->
   <section id="diferenciais" class="section section-alt">
     <div class="container">
       <div class="section-title">
@@ -97,7 +117,6 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
   <section id="contato" class="section">
     <div class="container">
       <div class="section-title">
@@ -109,6 +128,9 @@
 
       <div class="contact-grid">
         <a class="contact-card" href="mailto:uruaeducacional@gmail.com">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
           <h3>E-mail</h3>
           <p>uruaeducacional@gmail.com</p>
           <span>Enviar e-mail</span>
@@ -120,6 +142,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
           <h3>Endereço</h3>
           <p>R. Des. Motta, 3456 - Água Verde, Curitiba - PR, 80430-232</p>
           <span>Abrir no mapa</span>
@@ -131,27 +156,50 @@
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
           <h3>WhatsApp</h3>
           <p>+55 41 98835-2477</p>
           <span>Conversar agora</span>
         </a>
       </div>
 
-      <form id="form-contato" class="contact-form">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" rows="5"></textarea>
+      <form
+        id="form-contato"
+        class="contact-form"
+        action="https://formsubmit.co/uruaeducacional@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="text" name="assunto" placeholder="Assunto">
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+
+        <input type="hidden" name="_subject" value="Novo contato pelo site Uruá Educacional">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
         <button type="submit">Enviar mensagem</button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 - Uruá Educacional. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <a
+    href="https://wa.me/5541988352477"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <script src="js/script.js"></script>
 </body>
